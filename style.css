@@ -1,0 +1,87 @@
+
+/**
+*! chanmgin browser default
+**/
+* {
+margin:0;
+padding:0;
+box-sizing:border-box
+}
+
+body {
+    font-family: sans-serif;
+
+}
+.nav{
+ background-color: #a2d8ff;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+.cartDiv{
+    background-color: aqua;
+    
+    padding: 10px;
+}
+.cart{
+    color:red;
+    font-size: 20px;
+    margin: 10px;
+}
+.bi-cart2{
+font-size: 20px;
+}
+.price-qty{
+    display: flex;
+    
+}
+
+.shop{
+    display: grid;
+   grid-template-columns: repeat(4,223px);
+   gap: 30px;
+   justify-content: center;
+   
+}
+
+@media (max-width:1000px){
+    .shop{
+        grid-template-columns: repeat(2,223px);
+
+    }
+}
+@media(max-width:500px){
+    .shop{
+        grid-template-columns: repeat(1,223px);
+
+    }
+}
+    
+
+.item{
+    border: solid rgb(101, 97, 97);
+    border-radius: 5%;
+    padding: 10px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.price-qty{
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.btns{
+    display: flex;
+    gap: 10px;
+}
+.bi-plus-lg{
+    color: green;
+}
+.bi-dash-lg{
+    color:red
+}
